@@ -1,0 +1,1 @@
+insertionSort = lambda a,i = 1, j = 1: a if i == len(a) + 1 else insertionSort(a[:j-1] + [a[j],a[j-1]] + a[j+1:],i,j-1) if j > 0 and a[j-1] > a[j] else insertionSort(a,i+1,i)

@@ -1,1 +1,1 @@
-linearSearch = lambda d,v,i = 0: i if d[i] == v else linearSearch(d,v, i + 1) if i < len(d) - 1 else -1
+linearSearch = lambda a,n,i = 0: i if a[i] == n else linearSearch(a,n, i + 1) if i < len(a) - 1 else -1

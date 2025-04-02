@@ -1,0 +1,1 @@
+bubbleSort = lambda a,p = 0, i = 0: a if p == len(a) - 1 else bubbleSort(a,p+1,0) if i == len(a) - p - 1 else bubbleSort(a[:i] + [a[i + 1], a[i]] + a[i + 2:],p,i+1) if a[i] > a[i+1] else bubbleSort(a,p,i+1)
