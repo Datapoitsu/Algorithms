@@ -1,0 +1,1 @@
+binarySearch = lambda d,v,b = 0, t = None: b if d[b] == v else -1 if b == t else binarySearch(d, v, b, len(d) - 1) if t == None else binarySearch(d, v, 0, len(d)) if b == None else binarySearch(d, v, b, b + int(((t - b) / 2))) if v <= d[b + int(((t - b) / 2))] else binarySearch(d, v, b + int(((t - b) / 2)) + 1, t)
