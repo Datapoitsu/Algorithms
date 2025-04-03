@@ -1,0 +1,1 @@
+const binarySearch = (a, n, b = 0, t = null) => a[b] == n ? b : b == t ? -1 : t == null ? binarySearch(a, n, b, a.length - 1) : n <= a[b + parseInt(((t - b) / 2))] ? binarySearch(a, n, b, b + parseInt(((t - b) / 2))) : binarySearch(a, n, b + parseInt(((t - b) / 2)) + 1, t)

@@ -1,0 +1,1 @@
+insertionSort = (a,i = 1, j = 1) => i == a.length + 1 ? a : j > 0 && a[j-1] > a[j] ? insertionSort(a.slice(0,j-1).concat([a[j],a[j-1]], a.slice(j+1,a.length)),i,j-1) : insertionSort(a,i+1,i)

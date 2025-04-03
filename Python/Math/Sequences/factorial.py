@@ -1,0 +1,1 @@
+factorial = lambda n,r = 1: factorial(n-1,r*n) if n > 1 else r

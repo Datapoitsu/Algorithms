@@ -1,0 +1,1 @@
+palindromicNumber = lambda n,i = 0: i if n - 1 < 0 else palindrome(n-1,i+1) if str(i) == str(i)[::-1] else palindrome(n,i+1)

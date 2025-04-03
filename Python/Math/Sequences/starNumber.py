@@ -1,0 +1,1 @@
+starNumber = lambda n: (6 * (n+1)) * n + 1

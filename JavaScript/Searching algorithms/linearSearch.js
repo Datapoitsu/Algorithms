@@ -1,0 +1,1 @@
+const linearSearch = (a,n,i=0) => i == a.length ? -1 : a[i] != n ? linearSearch(a,n,i+1): i

@@ -1,0 +1,1 @@
+bubbleSort = (a,p = 0, i = 0) => p == a.length - 1 ? a : i == a.length - 1 - p ? bubbleSort(a,p+1,0) : bubbleSort(a[i] > a[i+1] ? a.slice(0,i).concat([a[i+1],a[i]],a.slice(i+2,a.length)) : a,p,i+1)

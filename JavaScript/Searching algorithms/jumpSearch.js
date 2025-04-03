@@ -1,0 +1,1 @@
+jumpSearch = (a,n,s=null,b=0,c=null) => s == null ? jumpSearch(a,n,parseInt(a.length ** (0.5)),b,c): c == null ?jumpSearch(a,n,s,b,s): b >= a.length ? -1: a[c] < s ? jumpSearch(a,n,s,b+s,c+s): b == a.length ? -1: a[b] < n ? jumpSearch(a,n,s,b+1,c): a[b] == n ? b: -1

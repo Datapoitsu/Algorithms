@@ -1,0 +1,1 @@
+prime = lambda n,p = [2], i = 3, k = 0: p[n] if len(p) - 1 == n else prime(n,p,i+2) if (i / p[k]) % 1 == 0 else  prime(n,p + [i],i+2) if k == len(p) - 1 else prime(n,p,i,k+1)

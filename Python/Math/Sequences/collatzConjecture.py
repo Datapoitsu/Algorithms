@@ -1,0 +1,1 @@
+collatzConjecture = lambda a: collatzConjecture([a]) if type(a) == int else a if a[-1] == 1 else collatzConjecture(a + [int(a[-1] / 2)]) if a[-1] % 2 == 0 else collatzConjecture(a + [int(a[-1] * 3 + 1)])

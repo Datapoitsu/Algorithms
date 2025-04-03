@@ -1,0 +1,1 @@
+simgaFunction = lambda n,p = 0,i = 1,r = 0: r if i >= int(n ** (1/2)) + 1 else simgaFunction(n,p,i + 1, r) if (n / i) % 1 != 0 else simgaFunction(n,p,i + 1, r + i ** p + n ** p) if n / i != i else simgaFunction(n,p,i + 1, r + i ** p)
