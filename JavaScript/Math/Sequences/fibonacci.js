@@ -1,0 +1,1 @@
+fibonacci = (n,i = 1,h = [0,1]) => i < n ? fibonacci(n,i+1,[h[1],h[0]+h[1]]) : h[n-i+1]
