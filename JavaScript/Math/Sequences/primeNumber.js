@@ -1,0 +1,1 @@
+prime = (n, currentPrimeIndex = 1, currentNumber = 3, divisors = []) => n == 0 ? 2 : divisors.every((divisor) => currentNumber % divisor != 0) ? (n-currentPrimeIndex) == 0 ? currentNumber : prime(n, currentPrimeIndex+1, currentNumber + 2, [...divisors, currentNumber]) : prime(n, currentPrimeIndex, currentNumber + 2, divisors)
