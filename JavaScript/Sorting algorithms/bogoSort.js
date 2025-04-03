@@ -1,0 +1,1 @@
+bogosort = (a, i = 0, rc = 0) => rc > 0 ? bogosort(a.splice(Math.floor(Math.random() * a.length), 1).concat(a), 0, rc-1) : i == a.length - 1 ? a : a[i] < a[i+1] ? bogosort(a, i+1) : bogosort(a, 0, a.length)
